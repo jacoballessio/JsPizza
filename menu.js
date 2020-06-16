@@ -81,6 +81,7 @@ function chooseMultiple(text) {
     else {
         if (color == 'grey') {
             text.style.backgroundColor = 'white';
+            topping.pop(text.id);
         }
         else {
             text.style.backgroundColor = 'grey';
