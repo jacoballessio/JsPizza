@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- M09 Joshua Criswell Team Assignment: Menu 6/13/20 -->
+<head>
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="Styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <script src="menu.js"></script>
+    <script src="General.js"></script>
+</head>
+<body>
+    <nav></nav>
+
+    <h1 id="menuheading">Our Menu</h1>
+
+    <div id="cart">
+        <p id="cartamount">0</p>
+        <p onclick="clearCart()" id="clear">X</p>
+        <a href="#invoicearea"><img src="cart.png"></a>
+    </div>
+
+    <div id="size">
+        <h2>Pizza Size</h3>
+        <p onclick="chooseOne(this)" class="size" id="small">S</p>
+        <p onclick="chooseOne(this)" class="size" id="medium">M</p>
+        <p onclick="chooseOne(this)" class="size" id="large">L</p>
+        <p onclick="chooseOne(this)" class="size" id="xlarge">XL</p>
+    </div>
+
+    <h2>Speciality Pizzas</h2>
+    <br><br>
+    <div class="speciality">
+        <div>
+            <h3><u>Meat Lovers</u></h3>
+            <img src="meatlovers.jpg" id="meat" onclick="addSpeciality(this)">
+        </div>
+        <div>
+            <h3><u>Veggie Lovers</u></h3>
+            <img src="veggiepizza.jpg" id="veggie" onclick="addSpeciality(this)">
+        </div>
+        <div>
+            <h3><u>BBQ Chicken</u></h3>
+            <img src="bbqchicken.jpg" id="bbq" onclick="addSpeciality(this)">
+        </div>
+        <div>
+            <h3><u>Hawaiian</u></h3>
+            <img src="hawaiianpizza.jpg" id="hawaiian" onclick="addSpeciality(this)">
+        </div>
+    </div>
+    <br><br>
+    <h2 id="createheading">Create Your Own</h2>
+    <div id="create">
+        <div id="sauce">
+            <h2>Sauce</h2>
+            <p onclick="chooseOne(this)" class="sauce" id="marinara">Marinara</p>
+            <p onclick="chooseOne(this)" class="sauce" id="garlic">Garlic</p>
+            <p onclick="chooseOne(this)" class="sauce" id="pesto">Pesto</p>
+            <p onclick="chooseOne(this)" class="sauce" id="alfredo">Alfredo</p>
+        </div>
+        <div id="toppings">
+            <h2>Toppings</h2>
+            <p onclick="chooseMultiple(this)" class="topping" id="pepperoni">Pepperoni (+$1.49)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="sausage">Sausage (+$1.49)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="chicken">Chicken (+$1.49)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="beef">Beef (+$1.99)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="onions">Onions (+$0.99)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="peppers">Green Peppers (+$0.99)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="olives">Olives (+$0.99)</p>
+            <p onclick="chooseMultiple(this)" class="topping" id="jalapenos">Jalapenos (+$0.99)</p>
+        </div>
+    </div>
+    <h2>Sides</h2>
+    <div id="sides">
+        <p onclick="addSide(this)" class="side" id="breadsticks">Bread Sticks</p>
+        <p onclick="addSide(this)" class="side" id="pasta">Pasta</p>
+        <p onclick="addSide(this)" class="side" id="soda">Soda</p>
+    </div>
+
+    <div id="buttons">
+        <input type="button" class="button" value="Add to Order" onclick="addToOrder(false)">
+        <br><br><br><br>
+        <input type="button" class="button" value="Review Order" onclick="printFinal()">
+    </div>
+
+    
+    <div id="invoicearea">
+        <textarea id="invoice" readonly></textarea>
+    </div>
+
+    <form action="kitchen.html" method="GET">
+        <input id="order" type="text" name="orderInfo" />
+        <input type="submit" id="submitbutton" value="Submit" onclick="produceOrder()" />
+    </form>
+
+</body>
+</DOCTYPE>
