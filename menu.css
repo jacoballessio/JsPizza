@@ -1,0 +1,203 @@
+h1, h2 {
+    text-align: center;
+}
+
+.speciality {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.speciality > div {
+    background-color: grey;
+    border:solid;
+    width:20%;
+    height:250px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    color:black;
+}
+
+.speciality > div > img {
+    border-radius: 8px;
+    max-height:50%;
+    max-width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.speciality > div > p {
+    font-size: 3em;
+}
+
+img:hover {
+    opacity:0.5;
+}
+
+#cart > a > img {
+    width:45px;
+    height:45px;
+    right:0;
+    top:0;
+}
+
+#cart {
+    position: fixed;
+    top:25px;
+    right:0px;
+}
+
+#cartamount {
+    position: absolute;
+    top:5px;
+    right:17px;
+    z-index:1;
+}
+
+body {
+    font-family:'Roboto';
+    background-color: white;
+    margin-left:350px;
+    margin-right:350px;
+}
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 2.0em;
+}
+
+#create {
+    text-align: center;
+}
+
+.size {
+    font-size: 3em;
+    margin-bottom:100px;
+}
+
+.size, .topping, .sauce, .side{
+    border-radius: 8px;
+    width:20%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.size, .topping, .sauce, .side:hover{
+    cursor:grab;
+}
+
+#size > p {
+    width:25%;
+    text-align:center;
+    float:left;
+}
+
+a {
+    margin-left:125px;
+    position:relative;
+    bottom:25px;
+    text-decoration: none;
+    font-size:1.5em;
+    color:grey;
+    font-weight: bold;
+}
+
+a:active {
+    color:black;
+
+}
+
+a:hover {
+    color:black;
+}
+
+#menuheading {
+    background-color: grey;
+    border-radius: 8px;
+}
+
+#createheading {
+    background-color: grey;
+    border-radius: 8px;
+}
+
+#buttons {
+    text-align:center;
+    margin-top:75px;
+    margin-bottom:75px;
+}
+
+input {
+    background-color: grey;
+    border-radius:8px;
+    margin-left:20px;
+    margin-right:20px;
+    height:50px;
+    width:200px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+#clear{
+    position: absolute;
+    right:50px;
+    bottom:25px;
+    color:red;
+}
+
+#clear:hover{
+    cursor: pointer;
+}
+
+#invoice, #kitchen {
+    width:700px;
+    height:400px;
+}
+
+#invoicearea {
+    text-align:center;
+    margin-bottom:80px;
+    margin-top:150px;
+}
+
+#submit {
+    text-align:center;
+    margin-bottom:75px;
+}
+
+#kitchendiv {
+    text-align:center;
+    margin-top:300px;
+}
+
+.side:hover {
+    background-color: grey;
+}
+
+#order {
+    opacity: 0;
+}
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#submitbutton {
+    z-index: 1;
+    position: relative;
+    left:580px;
+}
+
+#submitbutton:hover {
+    cursor: grab;
+}
