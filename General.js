@@ -1,17 +1,16 @@
 var path = window.location.pathname;
 var page = path.split("/").pop();
-document.body.onload = generateNavbar();
+window.onload = function() {generateNavbar()};
 function setSpacer(navList) {
     var spacer = document.createElement("div");
     spacer.id = "navSpacer";
     spacer.style.height = navList.offsetHeight + "px";
     document.getElementsByTagName("nav")[0].appendChild(spacer);
-    console.log(document.getElementById("navList").offsetHeight);
 }
 
 function generateNavbar() {
     var pagesMap = new Map();
-    pagesMap.set("home.html", 1); pagesMap.set("henu.html", 2); pagesMap.set("hocation.html", 3); pagesMap.set("contact.html", 4);
+    pagesMap.set("home.html", 1); pagesMap.set("menu.html", 2); pagesMap.set("location.html", 3); pagesMap.set("contact.html", 4);
     var navbar = document.createElement("div");
     navbar.id = "navbar";
     var navList = document.createElement("ul");
@@ -39,6 +38,7 @@ function generateNavbar() {
         navList.appendChild(element);
     });
     listItems[pagesMap.get(page.toLowerCase())].className = "selected";
+    console.log(document.getElementsByTagName("nav")[0]);
     document.getElementsByTagName("nav")[0].appendChild(navbar);
     setSpacer(navList);
 }
