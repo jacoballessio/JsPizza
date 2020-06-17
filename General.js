@@ -10,7 +10,7 @@ function setSpacer(navList) {
 
 function generateNavbar() {
     var pagesMap = new Map();
-    pagesMap.set("home.html", 1); pagesMap.set("menu.html", 2); pagesMap.set("location.html", 3); pagesMap.set("pizzaPage.html", 4);
+    pagesMap.set("home.html", 1); pagesMap.set("menu.html", 2); pagesMap.set("location.html", 3); pagesMap.set("pizzapage.html", 4);
     var navbar = document.createElement("div");
     navbar.id = "navbar";
     var navList = document.createElement("ul");
