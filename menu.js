@@ -7,7 +7,6 @@ var cartSize = 0;
 var sizeChoices;
 var sauceChoice;
 var totalPrice = 0;
-var prevAdd;
 var completeOrder = "";
 
 var specialityPizzaArray = [];
@@ -82,6 +81,7 @@ function chooseMultiple(text) {
     else {
         if (color == 'grey') {
             text.style.backgroundColor = 'white';
+            topping.pop(text.id);
         }
         else {
             text.style.backgroundColor = 'grey';
@@ -138,6 +138,9 @@ function addSpeciality(picture) {
     
 }
 
+// Checks if the item being added is a speciality, if it is it doesn't require a sauce string, if it isn't it does, both require a size choice
+// After an item is added the current size/topping/sauce choices are deselected and the item added is added to the completeOrder var with all previously
+// added items.
 function addToOrder(isSpecial) {
     var order = document.getElementById("invoice");
 

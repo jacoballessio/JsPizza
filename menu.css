@@ -195,5 +195,9 @@ form {
 #submitbutton {
     z-index: 1;
     position: relative;
-    left:235px;
+    left:580px;
+}
+
+#submitbutton:hover {
+    cursor: grab;
 }
