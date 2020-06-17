@@ -38,7 +38,6 @@ function generateNavbar() {
         navList.appendChild(element);
     });
     listItems[pagesMap.get(page.toLowerCase())].className = "selected";
-    console.log(document.getElementsByTagName("nav")[0]);
     document.getElementsByTagName("nav")[0].appendChild(navbar);
     setSpacer(navList);
 }

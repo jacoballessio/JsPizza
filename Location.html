@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="Location.css">
+        <script src="General.js"></script>
+        <script src="Location.js"></script>
+    </head>
+    <body>
+        <nav></nav>
+        <div id="bodyArea">
+            <h1>Locations</h1>
+            <div id="flexRegion">
+                <div class="flexSection" style="padding-top: 75px;">
+                    <h2>Find a location near me</h2>
+                    <form>
+                        <select id="state" name="state" oninput="updateList()">
+                            <option value="washington">Washington</option>
+                            <option value="oregon">Oregon</option>
+                            <option value="california">California</option>
+                            <option value="idaho">Idaho</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="flexSection" id="locationList"></div>
+                <div class="flexSection" style="padding-top: 75px;"><iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" id="gMaps"></iframe></div>
+            </div>
+        </div>
+    </body>
+</html>
