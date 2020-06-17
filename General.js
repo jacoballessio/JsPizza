@@ -28,11 +28,11 @@ function generateNavbar() {
     listChildren[0].innerHTML = "🍕J's PIZZA ";
     listChildren[1].href = "Home.html";
     listChildren[1].innerHTML = "Home";
-    listChildren[2].href = "Menu.html";
+    listChildren[2].href = "menu.html";
     listChildren[2].innerHTML = "Menu";
     listChildren[3].href = "Location.html";
     listChildren[3].innerHTML = "Location";
-    listChildren[4].href = "Contact.html";
+    listChildren[4].href = "contact.html";
     listChildren[4].innerHTML = "Contact";
     listItems.forEach(element => {
         navList.appendChild(element);
