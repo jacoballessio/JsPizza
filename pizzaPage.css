@@ -1,0 +1,17 @@
+
+/* Styles are added (i.e. different colors & font-sizes are mostly used for the header, body and the 
+2 paragraphs (within the body section). Various colors and fonts are used, to develop an output onto
+the Web page that appeals to almost all users/visitors.
+*/
+
+h1 {
+    color:darkred;
+    font-family: sans-serif;
+    font-size:50px;
+}
+
+body {
+    background-color: tan;
+    text-align:center;
+}
+

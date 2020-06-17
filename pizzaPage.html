@@ -1,0 +1,56 @@
+<!--
+    Author:Shukriya Haji
+    Course: CIS255
+    Date: June 14,2020
+    Assignment: M09 Team Project Presentation 
+    File: pizzaPage.html
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="pizzaPage.css" rel="stylesheet" />
+        <script src="pizzaPage.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="contactForm">
+            <h1>Contact Page</h1>
+
+            <!-- 
+                The contact form below includes text boxes for: name, address, phone & email. 
+            -->
+                <p>Feel free to fill out the contact form below:</p>
+
+                <button id="button">Form</button>
+
+            <form name="contactForm" method= "post" onsubmit="validateForm(); return false">
+
+                    <p>
+                        <input type="name" id="name" placeholder="Name">
+                    </p> 
+
+                    <p>
+                        <input type="address" id="address" placeholder="Address">
+                    </p>
+
+                    <p>
+                        <input type="phone" id="phone" placeholder="Phone">
+                    </p>
+                   
+                    <p>
+                        <input type="email" id="email" placeholder="Email">
+                    </p>
+                    
+                    <input type="submit" id="submit" value="Submit Form" /><br/><br/><br/>
+
+                <!-- 
+                    The Google map headquarters for the pizza restaurant. 
+                -->
+                <iframe width="60%" height="350" src="https://maps.google.com/maps?&amp;coord=45,-122&amp;q=1%20Ave%20NW%2C%20Seattle%2C%20WA&amp;z=10&amp;=&output=embed"></iframe>
+    
+            </form><br><br><br> 
+        </div>
+    </body>
+</html>
+
